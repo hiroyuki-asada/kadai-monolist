@@ -21,6 +21,7 @@ def new
   def show
     @item = Item.find(params[:id])
     @want_users = @item.want_users
+     @have_users = @item.have_users
   end
   
 end
